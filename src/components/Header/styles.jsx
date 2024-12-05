@@ -11,10 +11,19 @@ export const Header = styled.header`
     position: fixed;
     z-index: 2;
     transition: var(--transition);
+
+    @media (max-width: 500px) {
+        padding: 25px 35px;
+        font-size: 12px;
+    }
 `
 
 export const Image = styled.img`
     width: 100px;
+
+    @media (max-width: 500px) {
+        width: 60px;
+    }
 `;
 
 export const Container = styled.div`

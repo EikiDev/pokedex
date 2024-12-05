@@ -6,5 +6,5 @@ export const PokemonList = styled.ul`
     gap: 25px;
     flex-wrap: wrap;
     max-width: 1300px;
-    padding: 25px 0;
+    padding: 25px 10px;
 `
