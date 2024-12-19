@@ -23,7 +23,7 @@ export const PokemonPageDetails = () => {
     return (
         <S.Main>
             <S.PokemonDetails>
-                <S.BackButton href='/'><img src={`/src/images/${isDark ? 'light' : 'dark'}-arrow-left.svg`} alt="back button" /></S.BackButton>
+                <S.BackButton href='/pokedex'><img src={`/pokedex/src/images/${isDark ? 'light' : 'dark'}-arrow-left.svg`} alt="back button" /></S.BackButton>
                 <S.PokemonContainer>
                     <S.PokemonName>{pokemon.name}</S.PokemonName>
                     <S.ImageContainer>

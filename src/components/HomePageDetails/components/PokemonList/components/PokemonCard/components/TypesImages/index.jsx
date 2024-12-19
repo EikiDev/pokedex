@@ -9,7 +9,7 @@ export const TypesImages = ({ types }) => {
         <S.TypeList>
             {types.map((type, index) => (
                 <S.ImageContainer key={index}>
-                    <img src={`/src/images/type-icons/${type}.png`} alt={type} />
+                    <img src={`/pokedex/src/images/type-icons/${type}.png`} alt={type} />
                 </S.ImageContainer>
             ))}
         </S.TypeList>

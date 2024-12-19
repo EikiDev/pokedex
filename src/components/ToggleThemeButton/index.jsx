@@ -16,7 +16,7 @@ export const ToggleThemeButton = () => {
     return (
         <>
             <S.ToggleThemeButton onClick={handleOnClick}>
-                <img src={`/src/images/theme-icons/${isDark ? "moon" : "sun"}.svg`} alt="theme-icon" />
+                <img src={`/pokedex/src/images/theme-icons/${isDark ? "moon" : "sun"}.svg`} alt="theme-icon" />
             </S.ToggleThemeButton>
         </>
     )
