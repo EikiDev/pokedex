@@ -5,8 +5,8 @@ import { PokemonPage } from "./pokemon-page";
 export const AppRoutes = () => (
     <BrowserRouter>
         <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route exact path="/pokemon/:id" element={<PokemonPage />} />
+            <Route exact path="/pokedex" element={<HomePage />} />
+            <Route exact path="/pokedex/pokemon/:id" element={<PokemonPage />} />
         </Routes>
     </BrowserRouter>
 );
