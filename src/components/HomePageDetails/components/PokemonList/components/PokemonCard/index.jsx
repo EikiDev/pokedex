@@ -19,7 +19,7 @@ export const PokemonCard = ({ pokemon, index, pokemonsData }) => {
     }
 
     return (
-        <Link to={`/pokemon/${pokemonsId[index]}`}>
+        <Link to={`/pokedex/pokemon/${pokemonsId[index]}`}>
             <S.ListItem $typeColor={typeColor}>
                 <Styled.PokemonName>{pokemon.name}</Styled.PokemonName>
                 <div>
