@@ -23,6 +23,8 @@ Ao clicar em um dos pokémons, você será redirecionado a uma página com infor
 
 Também se encontra no canto superior direito um botão para alternar o tema do site entre modo claro e escuro.
 
+O site também é completamente responsivo, o que significa que poderá ser acessado em qualquer dispositivo.
+
 ## Ferramentas utilizadas
 
 - HTML, CSS e Javascript para a criação da estrutura do site;
