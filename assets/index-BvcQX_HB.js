@@ -141,7 +141,7 @@ Error generating stack: `+o.message+`
 
     &::after{
         content: '';
-        background-image: url(/src/images/caret-up.svg);
+        background-image: url(/pokedex/src/images/caret-up.svg);
         background-size: cover;
         height: 12px;
         width: 12px;
@@ -202,7 +202,7 @@ Error generating stack: `+o.message+`
     li:last-child button {
         border-bottom-left-radius: 5px;
     }
-`,fS=({handleButtonClick:e})=>{const[t,n]=O.useState(""),[r,i]=O.useState(),o=["normal","fighting","flying","poison","ground","rock","bug","ghost","steel","fire","water","grass","electric","psychic","ice","dragon","dark","fairy"];function s(u){i([!0,!1][u])}function l(u){const a=u.currentTarget.value;n(a),e(a)}return P.jsxs(lS,{children:[P.jsxs(uS,{children:[P.jsx("p",{children:"Select a type:"}),P.jsxs(aS,{$isActive:r,onFocus:()=>s(0),onBlur:()=>s(1),children:[t?P.jsx(If,{children:P.jsx("img",{src:`/src/images/type-icons/${t}.png`,alt:t})}):null,P.jsx("p",{style:{textTransform:"capitalize"},children:t||"All"})]})]}),P.jsxs(cS,{$isActive:r,children:[P.jsx("li",{children:P.jsx(jf,{$first:!0,onMouseDown:l,value:"",children:"All"})}),o.map((u,a)=>P.jsx("li",{children:P.jsxs(jf,{onMouseDown:l,value:u,children:[P.jsx(If,{children:P.jsx("img",{src:`/src/images/type-icons/${u}.png`,alt:u})}),P.jsx("p",{style:{textTransform:"capitalize"},children:u})]})},a))]})]})},Df=$.main`
+`,fS=({handleButtonClick:e})=>{const[t,n]=O.useState(""),[r,i]=O.useState(),o=["normal","fighting","flying","poison","ground","rock","bug","ghost","steel","fire","water","grass","electric","psychic","ice","dragon","dark","fairy"];function s(u){i([!0,!1][u])}function l(u){const a=u.currentTarget.value;n(a),e(a)}return P.jsxs(lS,{children:[P.jsxs(uS,{children:[P.jsx("p",{children:"Select a type:"}),P.jsxs(aS,{$isActive:r,onFocus:()=>s(0),onBlur:()=>s(1),children:[t?P.jsx(If,{children:P.jsx("img",{src:`/pokedex/src/images/type-icons/${t}.png`,alt:t})}):null,P.jsx("p",{style:{textTransform:"capitalize"},children:t||"All"})]})]}),P.jsxs(cS,{$isActive:r,children:[P.jsx("li",{children:P.jsx(jf,{$first:!0,onMouseDown:l,value:"",children:"All"})}),o.map((u,a)=>P.jsx("li",{children:P.jsxs(jf,{onMouseDown:l,value:u,children:[P.jsx(If,{children:P.jsx("img",{src:`/pokedex/src/images/type-icons/${u}.png`,alt:u})}),P.jsx("p",{style:{textTransform:"capitalize"},children:u})]})},a))]})]})},Df=$.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,7 +259,7 @@ Error generating stack: `+o.message+`
     background-color: transparent;
     border: none;
     cursor: pointer;
-`,gS=()=>{const{isDark:e,setIsDark:t}=O.useContext(xi);function n(){t(r=>(r?localStorage.setItem("isDark",!1):localStorage.setItem("isDark",!0),JSON.parse(localStorage.getItem("isDark"))))}return P.jsx(P.Fragment,{children:P.jsx(yS,{onClick:n,children:P.jsx("img",{src:`/pokedex/src/images/theme-icons/${e?"moon":"sun"}.svg`,alt:"theme-icon"})})})},dm=()=>P.jsxs(hS,{children:[P.jsx(lh,{to:"/pokedex",children:P.jsxs(vS,{children:[P.jsx(mS,{src:"/pokedex/src/images/pokeball.png",alt:"logo"}),P.jsx("h1",{children:"Pokédex"})]})}),P.jsx(gS,{})]}),wS=()=>P.jsxs(P.Fragment,{children:[P.jsx(dm,{}),P.jsx(pS,{})]});async function SS(e){return await Promise.all(e.map(async n=>{const{id:r}=await Jn(n.type.url);return`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/${r}.png`}))}const xS=$.div`
+`,gS=()=>{const{isDark:e,setIsDark:t}=O.useContext(xi);function n(){t(r=>(r?localStorage.setItem("isDark",!1):localStorage.setItem("isDark",!0),JSON.parse(localStorage.getItem("isDark"))))}return P.jsx(P.Fragment,{children:P.jsx(yS,{onClick:n,children:P.jsx("img",{src:`/pokedex/src/images/theme-icons/${e?"moon":"sun"}.svg`,alt:"theme-icon"})})})},dm=()=>P.jsxs(hS,{children:[P.jsx(lh,{to:"/",children:P.jsxs(vS,{children:[P.jsx(mS,{src:"/pokedex/src/images/pokeball.png",alt:"logo"}),P.jsx("h1",{children:"Pokédex"})]})}),P.jsx(gS,{})]}),wS=()=>P.jsxs(P.Fragment,{children:[P.jsx(dm,{}),P.jsx(pS,{})]});async function SS(e){return await Promise.all(e.map(async n=>{const{id:r}=await Jn(n.type.url);return`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/${r}.png`}))}const xS=$.div`
     grid-area: types;
 `,ES=$.ul`
     display: flex;
@@ -392,7 +392,7 @@ Error generating stack: `+o.message+`
     @media (max-width: 500px) {
         width: 25px;
     }
-`,QS=()=>{const{isDark:e}=O.useContext(xi),{id:t}=vg(),{data:n,isLoading:r,isError:i,error:o}=li("pokemonData",()=>Uh(t),{refetchOnWindowFocus:!1});return r?P.jsx("p",{children:"Loading..."}):i?P.jsxs("p",{children:["An unexpected error occurred: ",o]}):P.jsx(DS,{children:P.jsxs($S,{children:[P.jsx(BS,{href:"/pokedex",children:P.jsx("img",{src:`/pokedex/src/images/${e?"light":"dark"}-arrow-left.svg`,alt:"back button"})}),P.jsxs(MS,{children:[P.jsx(zS,{children:n.name}),P.jsx(bS,{children:P.jsx("img",{src:n.sprite,alt:n.name})}),P.jsxs(US,{children:["Nº ",t]})]}),P.jsx(CS,{types:n.types}),P.jsx(FS,{abilities:n.abilities}),P.jsx(jS,{moves:n.moves})]})})},HS=()=>P.jsxs(P.Fragment,{children:[P.jsx(dm,{}),P.jsx(QS,{})]}),qS=()=>P.jsx($g,{children:P.jsxs(Ng,{children:[P.jsx(ru,{exact:!0,path:"/pokedex",element:P.jsx(wS,{})}),P.jsx(ru,{exact:!0,path:"/pokedex/pokemon/:id",element:P.jsx(HS,{})})]})}),WS=Vw`
+`,QS=()=>{const{isDark:e}=O.useContext(xi),{id:t}=vg(),{data:n,isLoading:r,isError:i,error:o}=li("pokemonData",()=>Uh(t),{refetchOnWindowFocus:!1});return r?P.jsx("p",{children:"Loading..."}):i?P.jsxs("p",{children:["An unexpected error occurred: ",o]}):P.jsx(DS,{children:P.jsxs($S,{children:[P.jsx(BS,{href:"/pokedex",children:P.jsx("img",{src:`/pokedex/src/images/${e?"light":"dark"}-arrow-left.svg`,alt:"back button"})}),P.jsxs(MS,{children:[P.jsx(zS,{children:n.name}),P.jsx(bS,{children:P.jsx("img",{src:n.sprite,alt:n.name})}),P.jsxs(US,{children:["Nº ",t]})]}),P.jsx(CS,{types:n.types}),P.jsx(FS,{abilities:n.abilities}),P.jsx(jS,{moves:n.moves})]})})},HS=()=>P.jsxs(P.Fragment,{children:[P.jsx(dm,{}),P.jsx(QS,{})]}),qS=()=>P.jsx($g,{children:P.jsxs(Ng,{basename:"/",children:[P.jsx(ru,{exact:!0,path:"/",element:P.jsx(wS,{})}),P.jsx(ru,{exact:!0,path:"/pokedex/pokemon/:id",element:P.jsx(HS,{})})]})}),WS=Vw`
 
     :root{
         --background-color: #E4E4E4;
