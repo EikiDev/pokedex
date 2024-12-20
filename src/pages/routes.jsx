@@ -4,8 +4,8 @@ import { PokemonPage } from "./pokemon-page";
 
 export const AppRoutes = () => (
     <HashRouter>
-        <Routes>
-            <Route exact path="/pokedex" element={<HomePage />} />
+        <Routes basename="/">
+            <Route exact path="/" element={<HomePage />} />
             <Route exact path="/pokedex/pokemon/:id" element={<PokemonPage />} />
         </Routes>
     </HashRouter>
