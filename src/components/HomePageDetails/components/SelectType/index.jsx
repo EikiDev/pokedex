@@ -23,7 +23,7 @@ export const SelectType = ({ handleButtonClick }) => {
             <S.SelectorContainer>
                 <p>Select a type:</p>
                 <S.Selector $isActive={isActive} onFocus={() => handleSelector(0)} onBlur={() => handleSelector(1)}>
-                    {typeChosen ? <S.TypeIconContainer><img src={`/pokedex/src/images/type-icons/${typeChosen}.png`} alt={typeChosen} /></S.TypeIconContainer> : null}
+                    {typeChosen ? <S.TypeIconContainer><img src={`assets/type-icons/${typeChosen}.png`} alt={typeChosen} /></S.TypeIconContainer> : null}
                     <p style={{ textTransform: "capitalize" }}>{typeChosen ? typeChosen : "All"}</p>
                 </S.Selector>
             </S.SelectorContainer>
@@ -37,7 +37,7 @@ export const SelectType = ({ handleButtonClick }) => {
                         <li key={index}>
                             <S.TypeButton onMouseDown={handleOnClick} value={type}>
                                 <S.TypeIconContainer>
-                                    <img src={`/pokedex/src/images/type-icons/${type}.png`} alt={type} />
+                                    <img src={`assets/type-icons/${type}.png`} alt={type} />
                                 </S.TypeIconContainer>
                                 <p style={{ textTransform: "capitalize" }}>{type}</p>
                             </S.TypeButton>

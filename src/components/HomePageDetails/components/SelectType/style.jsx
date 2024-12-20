@@ -35,7 +35,7 @@ export const Selector = styled.button`
 
     &::after{
         content: '';
-        background-image: url(/pokedex/src/images/caret-up.svg);
+        background-image: url(assets/caret-up.svg);
         background-size: cover;
         height: 12px;
         width: 12px;
