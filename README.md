@@ -2,9 +2,13 @@
 
 Este projeto é uma quest do curso DevQuest, um exercício para treinar e aperfeiçoar minhas habilidades de HTML, CSS, Javascript, React e Context API, e também desenvolver um site do zero, aprendendo o uso de API's e tomando decisões durante a realização do projeto.
 
-![image](https://github.com/user-attachments/assets/4223bd75-8154-4aeb-8913-ddeab794cfd5)
-![image](https://github.com/user-attachments/assets/3529d0a7-842a-4efd-82df-c4343e5b3414)
+## Screenshots
 
+![alt text](public/assets/github/home-page.png)
+
+![alt text](public/assets/github/pokemon-page-details.png)
+
+![alt text](public/assets/github/pokedex.gif)
 
 ## Funcionalidades
 
@@ -44,11 +48,45 @@ Depois, fui criando a estrutura da página e dividindo os trechos de código em 
 
 Primeiro estruturei a página, depois implementei as funcionalidades com Javascript e apenas no fim trabalhei com a estilização do projeto.
 
+### Dificuldades
+
+Um obstáculo na criação deste projeto foi aprender a usar a API fornecida, algo que conseguir superar lendo a documentação e fazendo testes.
+
+Também tive alguns receios em relação a organização de pastas, e qualquer dica seria de grande ajuda!
+
+Uma das minhas maiores dificuldades foi conseguir fazer o deploy do projeto no GitHub Pages, pois eu nunca havia feito um antes, mas depois de muita pesquisa e alterações no código, finalmente consegui!
+
+Qualquer feedback de como melhorar o código é bem vindo! Seja relacionado ao método de deploy quanto de outros aspectos do projeto.
+
 ## Como rodar o projeto?
+
+### Link
+
+Abra o projeto hospedado no GitHub Pages: [https://eikidev.github.io/pokedex/](https://eikidev.github.io/pokedex/)
+
+### Através do `npm run dev`
 
 - Primeiro é necessário baixar a pasta do projeto no seu computador;
 - Em seguida, abra o terminal na pasta e digite `npm install` para baixar todas as dependências do projeto;
-- Após isso, digite `npm run dev` e aparecerá um link;
+- Vá no arquivo `vite.config.js` e comente temporariamente o trecho: 
+``` js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: "/pokedex", // comente nesta linha
+  publicDir: 'public',
+  build: {
+    outDir: 'dist',
+    assetsDir: "assets",
+  },
+})
+
+```
+
+- Após isso, vá ao terminal e digite `npm run dev` e aparecerá um link;
 - Para clicar, pressione a tecla Ctrl e clique com o botão esquerdo nele;
 - O projeto abrirá no seu navegador.
 
